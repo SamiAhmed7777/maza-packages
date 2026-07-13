@@ -32,7 +32,7 @@ What I need from you (in order of preference):
 2. **Good case:** You give me a written "yes, submit these under your name on my behalf" so I can file the PRs and handle moderation cycles. I'll credit you as the upstream source everywhere.
 3. **Minimal case:** You don't have time right now — I'll submit the AUR package (which has no permission gate), the Scoop manifest, and the Chocolatey package today. The other channels wait until you've had a chance to respond. No PRs to your identity.
 
-Either way, the goal is the same: make MAZA easier to install for the Lakota community and anyone else who wants to use it.
+Either way, the goal is the same: make MAZA easier to install for the community and anyone else who wants to use it.
 
 No rush — happy to wait for your next release cycle if you'd rather bundle this with v0.16.4 or whatever's next. Just wanted to put the work in front of you so it's there when you're ready.
 
