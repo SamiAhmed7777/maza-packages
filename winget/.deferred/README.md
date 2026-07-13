@@ -1,6 +1,6 @@
 # WinGet manifest — DEFERRED
 
-The WinGet manifest at `manifests/m/MazaCoin/maza/0.16.3/` is drafted but
+The WinGet manifest at `manifests/m/MazaCoin/MAZA/0.16.3/` is drafted but
 **not being submitted** at this time.
 
 ## Why it's deferred
@@ -24,19 +24,19 @@ submitting under any non-Microsoft-registered publisher name would either:
 When activated, the manifest will publish under:
 
 ```
-MazaCoin.maza
+MazaCoin.MAZA
 ```
 
 Giving the community the install command:
 
 ```
-winget install MazaCoin.maza
+winget install MazaCoin.MAZA
 ```
 
 ## When to submit
 
-Move `manifests/m/MazaCoin/maza/0.16.3/` back up to
-`winget/manifests/m/MazaCoin/maza/0.16.3/` and submit a PR to
+Move `manifests/m/MazaCoin/MAZA/0.16.3/` back up to
+`winget/manifests/m/MazaCoin/MAZA/0.16.3/` and submit a PR to
 [`microsoft/winget-pkgs`](https://github.com/microsoft/winget-pkgs) when
 **either** of the following is true:
 
@@ -45,10 +45,27 @@ Move `manifests/m/MazaCoin/maza/0.16.3/` back up to
   to us, or
 - `MazaCoin` registers itself as a publisher.
 
-In either case, the manifest is already configured for the target identifier
-`MazaCoin.maza` with `Publisher: MazaCoin`. The path and filenames already
-match the WinGet convention (`m/MazaCoin/maza/0.16.3/MazaCoin.maza.*.yaml`),
-so no rename is needed on activation — just move the folder up one level.
+The manifest is already configured for the target identifier `MazaCoin.MAZA`
+with `Publisher: MazaCoin`. The path and filenames already match the WinGet
+convention (`m/MazaCoin/MAZA/0.16.3/MazaCoin.MAZA.*.yaml`), so no rename is
+needed on activation — just move the folder up one level.
+
+## How to register MazaCoin as a Microsoft publisher (for the maintainer)
+
+This takes ~15 minutes and is free:
+
+1. Go to <https://partner.microsoft.com/dashboard/microsoftpartner/onboarding>
+2. Sign in with a Microsoft account that owns/represents the MazaCoin brand
+   (ideally an account tied to the `@owlhooter` GitHub identity or the
+   `mazacoin.org` domain).
+3. Choose **"Individual"** or **"Organization"** depending on what applies.
+4. Verify the publisher name `MazaCoin` is available (it should be — nothing
+   is registered there yet).
+5. Complete verification (Microsoft sends a code to a domain email or
+   requires a GitHub/website link that proves association with the brand).
+
+Once registered, file the manifest PR under that account and it merges
+through Microsoft's automated validation.
 
 ## What users get in the meantime
 
