@@ -1,0 +1,38 @@
+# Maintainer: Sami Ahmed <sami@sami.ai>
+# Maintainer: MazaCoin <https://github.com/MazaCoin/maza> (upstream)
+# Contributor: community-packaging for MAZA (MazaCoin) sovereign-tribe cryptocurrency
+pkgname=maza
+pkgver=0.16.3
+pkgrel=1
+pkgdesc="MAZA (MazaCoin) full node wallet — sovereign-tribe cryptocurrency since 2014"
+arch=('x86_64' 'aarch64')
+url="https://mazacoin.org/"
+license=('MIT')
+depends=('qt5-base' 'openssl' 'db' 'boost-libs' 'miniupnpc' 'zeromq')
+makedepends=()
+optdepends=('tor: anonymize network traffic')
+provides=('maza-qt' 'mazad' 'maza-cli')
+conflicts=('maza-git' 'maza-qt')
+install=maza.install
+
+# x86_64 binary
+source_x86_64=("https://github.com/MazaCoin/maza/releases/download/v${pkgver}/maza-${pkgver}-x86_64-linux-gnu.tar.gz")
+sha256sums_x86_64=('57ef923ecc518119bf74681a932e250fd87035e8c717f95781df1d0d303ddf48')
+
+# aarch64 binary
+source_aarch64=("https://github.com/MazaCoin/maza/releases/download/v${pkgver}/maza-${pkgver}-aarch64-linux-gnu.tar.gz")
+sha256sums_aarch64=('5889f8cd9e173bb8c5f6ef80b08d71cbb4247ec1ed81d16d9394b78adc5929d8')
+
+package() {
+  cd "$srcdir/maza-${pkgver}"
+
+  install -Dm755 bin/maza-qt      "$pkgdir/usr/bin/maza-qt"
+  install -Dm755 bin/mazad        "$pkgdir/usr/bin/mazad"
+  install -Dm755 bin/maza-cli     "$pkgdir/usr/bin/maza-cli"
+  install -Dm755 bin/maza-tx      "$pkgdir/usr/bin/maza-tx" 2>/dev/null || true
+
+  install -dm755 "$pkgdir/usr/share/maza"
+  cp -a share/* "$pkgdir/usr/share/maza/" 2>/dev/null || true
+
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

@@ -1,0 +1,43 @@
+{
+    "version": "0.16.3",
+    "description": "MAZA (MazaCoin) full node wallet — a sovereign-tribe cryptocurrency since 2014",
+    "homepage": "https://mazacoin.org/",
+    "license": "MIT",
+    "depends": "",
+    "suggest": "",
+    "bin": "maza-0.16.3\\bin\\mazad.exe",
+    "shortcuts": [
+        [
+            "MAZA-qt",
+            "maza-0.16.3\\bin\\maza-qt.exe"
+        ]
+    ],
+    "env_add_path": "maza-0.16.3\\bin",
+    "env_set": {},
+    "persistence": null,
+    "pre_install": null,
+    "installer": {
+        "script": null,
+        "global": null
+    },
+    "uninstaller": {
+        "script": null,
+        "global": null
+    },
+    "checkver": "github:",
+    "checkver_url": "https://github.com/MazaCoin/maza/releases/latest",
+    "checkver_re": "v([\\d.]+)\\.zip",
+    "autoupdate": {
+        "url": "https://github.com/MazaCoin/maza/releases/download/v$version/maza-$version-win64.zip",
+        "extract_dir": "maza-$version",
+        "hash": {
+            "url": "https://github.com/MazaCoin/maza/releases/download/v$version/maza-$version-win64.zip.sha256",
+            "regex": "(?<hash>[a-fA-F0-9]{64})"
+        }
+    },
+    "notes": [
+        "Upstream: https://github.com/MazaCoin/maza",
+        "Binaries published by @owlhooter at https://github.com/MazaCoin/maza/releases/tag/v0.16.3",
+        "For macOS use Homebrew (brew install --cask maza). For Linux use Snap or AUR."
+    ]
+}

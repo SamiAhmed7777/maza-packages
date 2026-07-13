@@ -1,0 +1,13 @@
+PackageIdentifier: MazaCoin.MAZA
+PackageVersion: 0.16.3
+Installers:
+  - Architecture: x64
+    InstallerType: exe
+    InstallerUrl: https://github.com/MazaCoin/maza/releases/download/v0.16.3/maza-0.16.3-win64-setup-unsigned.exe
+    InstallerSha256: 563F37E8208427A38CDE013F785D2A4CBB9AAC29E93DC1233D28B9762D3EDDEC
+  - Architecture: x86
+    InstallerType: exe
+    InstallerUrl: https://github.com/MazaCoin/maza/releases/download/v0.16.3/maza-0.16.3-win32-setup-unsigned.exe
+    InstallerSha256: D3F1D2BD4247FFBF3BF002A2E67F4445ED9D37F9C4AFD88DE6C45FF2C71F69D0
+ManifestType: version
+ManifestVersion: 1.6.0

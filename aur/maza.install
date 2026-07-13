@@ -1,0 +1,15 @@
+post_install() {
+  echo "==> MAZA Core installed. Run 'maza-qt' to start the GUI wallet,"
+  echo "==> or 'mazad' to start the headless node daemon."
+  echo "==> Upstream: https://github.com/MazaCoin/maza"
+  echo "==> Community packaging: https://github.com/SamiAhmed7777/maza-packages"
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  echo "==> MAZA Core uninstalled. Your wallet data is preserved at ~/.maza"
+  echo "==> if you wish to remove it manually: rm -rf ~/.maza"
+}

@@ -1,0 +1,34 @@
+PackageIdentifier: MazaCoin.MAZA
+PackageVersion: 0.16.3
+PackageLocale: en-US
+PackageUrl: https://mazacoin.org/
+Publisher: MazaCoin
+PublisherUrl: https://github.com/MazaCoin
+PublisherSupportUrl: https://github.com/MazaCoin/maza/issues
+PrivacyUrl: https://mazacoin.org/
+Author: MazaCoin
+Copyright: Copyright 2014-2026 MazaCoin
+CopyrightUrl: https://github.com/MazaCoin/maza/blob/master/COPYING
+License: MIT
+LicenseUrl: https://opensource.org/licenses/MIT
+ShortDescription: MAZA Core wallet and node
+Description: |-
+  MAZA Core is the full node software that makes up the backbone of the MAZA network.
+  MAZA (MazaCoin) is a sovereign-tribe cryptocurrency created in 2014.
+Moniker: maza
+Tags:
+  - blockchain
+  - cryptocurrency
+  - wallet
+  - bitcoin-fork
+  - open-source
+  - maza
+  - mazacoin
+ReleaseDate: 2022-01-13
+Installers:
+  - Architecture: x64
+    InstallerType: exe
+    InstallerUrl: https://github.com/MazaCoin/maza/releases/download/v0.16.3/maza-0.16.3-win64-setup-unsigned.exe
+    InstallerSha256: 563F37E8208427A38CDE013F785D2A4CBB9AAC29E93DC1233D28B9762D3EDDEC
+ManifestType: singleton
+ManifestVersion: 1.6.0

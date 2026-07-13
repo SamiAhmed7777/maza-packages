@@ -25,12 +25,14 @@ Make MAZA installable with one command on every major platform, so the Lakota co
 
 | Channel        | Manifest in this repo | PR status | Notes |
 | -------------- | --------------------- | --------- | ----- |
-| Homebrew Cask  | ✅ `homebrew/Casks/maza.rb`              | ⏳ not yet submitted | Needs `@owlhooter` (MAZA maintainer) sign-off because the cask PR goes to `homebrew/homebrew-cask`, which requires upstream-acknowledged submission for first-party packages. |
-| Scoop          | ✅ `scoop/maza.json`                     | ⏳ not yet submitted | Scoop is more lenient — anyone can PR a manifest. |
-| WinGet         | ✅ `winget/manifests/m/Mazacoin.MAZA/0.16.3/*.yaml` | ⏳ not yet submitted | Manifests are 3-file (installer, locale, version). PR goes to `microsoft/winget-pkgs`. |
-| Chocolatey     | ✅ `chocolatey/maza.nuspec` + `tools/*.ps1` | ⏳ not yet submitted | Needs an API key to push. Will sit in moderator queue 1-3 days after first push. |
-| Snap           | ✅ `snap/snapcraft.yaml`                 | ⏳ not yet submitted | Snap Store review can take a week; brand-registered name required. |
-| AUR (Arch)     | ✅ `aur/PKGBUILD`                        | ⏳ not yet submitted | AUR is open — anyone can publish. |
+| Homebrew Cask  | ✅ `homebrew/Casks/maza.rb`              | ⏳ drafted, awaiting submission | Needs `@owlhooter` (MAZA maintainer) sign-off because the cask PR goes to `homebrew/homebrew-cask`, which requires upstream-acknowledged submission for first-party packages. |
+| Scoop          | ✅ `scoop/maza.json`                     | ⏳ drafted, awaiting submission | Scoop is more lenient — anyone can PR a manifest. |
+| WinGet         | ✅ `winget/manifests/m/Mazacoin.MAZA/0.16.3/*.yaml` | ⏳ drafted, awaiting submission | Manifests are 3-file (installer, locale, version). PR goes to `microsoft/winget-pkgs`. |
+| Chocolatey     | ✅ `chocolatey/maza.nuspec` + `tools/*.ps1` | ⏳ drafted, awaiting submission | Needs an API key to push. Will sit in moderator queue 1-3 days after first push. |
+| Snap           | ✅ `snap/snapcraft.yaml`                 | ⏳ drafted, awaiting submission | Snap Store review can take a week; brand-registered name required (`snapcraft register maza`). |
+| AUR (Arch)     | ✅ `aur/PKGBUILD` + `aur/maza.install`   | ⏳ drafted, awaiting submission | AUR is open — anyone can publish. |
+
+All asset SHA256s have been captured against the live v0.16.3 release. See [`manifests/README.md`](./manifests/README.md) for the verification table.
 
 ## What needs to happen before submission
 

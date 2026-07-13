@@ -1,0 +1,68 @@
+name: maza
+base: core22
+version: '0.16.3'
+summary: MAZA Core - sovereign-tribe cryptocurrency wallet
+description: |
+  MAZA Core is the full node software that makes up the backbone of the MAZA
+  network. MAZA (MazaCoin) is a cryptocurrency created in 2014 focused on
+  providing sovereign tribes a more independent economy.
+
+  This snap bundles the official MAZA binaries published at
+  https://github.com/MazaCoin/maza/releases/tag/v0.16.3
+
+grade: stable
+confinement: strict
+
+license: MIT
+
+website: https://mazacoin.org/
+source: https://github.com/MazaCoin/maza
+issues: https://github.com/MazaCoin/maza/issues
+
+icon: assets/maza-icon.png
+
+apps:
+  maza-qt:
+    command: bin/maza-qt
+    extensions: [gnome]
+    plugs:
+      - network
+      - network-bind
+      - home
+      - desktop
+      - desktop-legacy
+      - x11
+      - wayland
+      - opengl
+      - audio-playback
+      - removable-media
+  mazad:
+    command: bin/mazad
+    daemon: simple
+    plugs:
+      - network
+      - network-bind
+      - home
+
+parts:
+  maza:
+    plugin: dump
+    source: https://github.com/MazaCoin/maza/releases/download/v0.16.3/maza-0.16.3-x86_64-linux-gnu.tar.gz
+    source-checksum: sha256/57ef923ecc518119bf74681a932e250fd87035e8c717f95781df1d0d303ddf48
+    override-build: |
+      set -eux
+      cp -r $CRAFT_PART_SRC/bin $CRAFT_PART_INSTALL/
+      cp -r $CRAFT_PART_SRC/lib $CRAFT_PART_INSTALL/ || true
+      cp -r $CRAFT_PART_SRC/include $CRAFT_PART_INSTALL/ || true
+      cp -r $CRAFT_PART_SRC/share $CRAFT_PART_INSTALL/ || true
+    stage-packages:
+      - libqt5gui5
+      - libqt5widgets5
+      - libqt5network5
+      - libqt5core5a
+      - libssl3
+      - libdb5.3
+
+layout:
+  /usr/bin/maza-qt:
+    symlink: $SNAP/bin/maza-qt
