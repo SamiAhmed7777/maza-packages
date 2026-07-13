@@ -22,7 +22,7 @@ Five of those channels (AUR, Scoop, Chocolatey, Snap, Homebrew Cask) can ship to
 
 What I need from you (in order of preference):
 
-1. **Best case:** You submit the PRs yourself from your own accounts (Homebrew tap, WinGet, Chocolatey, Snap) — I'll hand over the exact files you need. Most package managers prefer first-party submissions.
+1. **Best case:** You fork [`SamiAhmed7777/maza-packages`](https://github.com/SamiAhmed7777/maza-packages), push the manifests from there, and submit the PRs from your fork to each upstream package-manager repo (Homebrew tap, WinGet, Chocolatey, Snap). Most package managers prefer first-party submissions, and a fork from you is the cleanest signal that the work is authorized. I'll stop here once you've forked.
 2. **Good case:** You give me a written "yes, submit these under your name on my behalf" so I can file the PRs and handle moderation cycles. I'll credit you as the upstream source everywhere.
 3. **Minimal case:** You don't have time right now — I'll submit the AUR package (which has no permission gate), the Scoop manifest, and the Chocolatey package today. The other channels wait until you've had a chance to respond. No PRs to your identity.
 
