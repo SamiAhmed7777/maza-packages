@@ -23,12 +23,12 @@ cask "maza" do
     strategy :github_latest_release
   end
 
-  app "MAZA-qt.app"
+  app "Maza-Qt.app"
 
   zap trash: [
-    "~/Library/Application Support/MAZA",
-    "~/Library/Preferences/MAZA-Qt.plist",
-    "~/Library/Saved Application State/MAZA-Qt.savedState",
+    "~/Library/Application Support/MazaCore",
+    "~/Library/Preferences/Maza-Qt.plist",
+    "~/Library/Saved Application State/Maza-Qt.savedState",
   ]
 
   caveats <<~EOS

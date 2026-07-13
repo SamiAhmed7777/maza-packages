@@ -19,7 +19,7 @@ website: https://mazacoin.org/
 source: https://github.com/MazaCoin/maza
 issues: https://github.com/MazaCoin/maza/issues
 
-icon: assets/maza-icon.png
+icon: assets/icon-256.png
 
 apps:
   maza-qt:

@@ -8,7 +8,7 @@ This repo contains ready-to-submit manifests for:
 | ------------- | ------------------------------------------ | ------------------------------------ |
 | Homebrew Cask | `homebrew/Casks/maza.rb`                   | `Homebrew/homebrew-cask`             |
 | Scoop         | `scoop/maza.json`                          | `ScoopInstaller/Main`                |
-| WinGet        | `winget/manifests/m/Mazacoin.MAZA/0.16.3/` | `microsoft/winget-pkgs`              |
+| WinGet        | `winget/manifests/g/GitHub.SamiAhmed7777/MAZA/0.16.3/` | `microsoft/winget-pkgs`              |
 | Chocolatey    | `chocolatey/{maza.nuspec,tools/*.ps1}`     | `chocolatey-community/chocolatey-packages` |
 | Snap          | `snap/snapcraft.yaml`                      | `snapcraft.io` (brand store)         |
 | AUR           | `aur/PKGBUILD`, `aur/maza.install`         | `aur.archlinux.org` (maza)           |
