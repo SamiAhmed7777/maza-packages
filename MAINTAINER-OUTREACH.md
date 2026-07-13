@@ -30,5 +30,7 @@ Either way, the goal is the same: make MAZA easier to install for the community 
 
 No rush — happy to wait for your next release cycle if you'd rather bundle this with v0.16.4 or whatever's next. Just wanted to put the work in front of you so it's there when you're ready.
 
+Feel free to fork the repo at your convenience and implement the changes however you prefer — the manifests, asset files, and SHA256s are all in place. Once you push to a package-manager repo, `brew install --cask maza`, `scoop install maza`, `choco install maza`, and the rest become real.
+
 With respect,
 Sami
