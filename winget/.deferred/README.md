@@ -1,7 +1,7 @@
 # WinGet manifest — DEFERRED
 
-The WinGet manifest at `manifests/g/GitHub.SamiAhmed7777/MAZA/0.16.3/` is
-drafted but **not being submitted** at this time.
+The WinGet manifest at `manifests/m/MazaCoin/maza/0.16.3/` is drafted but
+**not being submitted** at this time.
 
 ## Why it's deferred
 
@@ -19,9 +19,24 @@ submitting under any non-Microsoft-registered publisher name would either:
 2. Risk being squatted on by a third party before the upstream maintainer
    registers themselves.
 
+## Target identifier
+
+When activated, the manifest will publish under:
+
+```
+MazaCoin.maza
+```
+
+Giving the community the install command:
+
+```
+winget install MazaCoin.maza
+```
+
 ## When to submit
 
-Move `manifests/` back up to the root and submit a PR to
+Move `manifests/m/MazaCoin/maza/0.16.3/` back up to
+`winget/manifests/m/MazaCoin/maza/0.16.3/` and submit a PR to
 [`microsoft/winget-pkgs`](https://github.com/microsoft/winget-pkgs) when
 **either** of the following is true:
 
@@ -30,9 +45,10 @@ Move `manifests/` back up to the root and submit a PR to
   to us, or
 - `MazaCoin` registers itself as a publisher.
 
-In either case, the recommended identifier is `MazaCoin.MAZA`. The draft
-manifests in `manifests/g/GitHub.SamiAhmed7777/MAZA/0.16.3/` will need to
-be renamed and the `Publisher` field updated to match.
+In either case, the manifest is already configured for the target identifier
+`MazaCoin.maza` with `Publisher: MazaCoin`. The path and filenames already
+match the WinGet convention (`m/MazaCoin/maza/0.16.3/MazaCoin.maza.*.yaml`),
+so no rename is needed on activation — just move the folder up one level.
 
 ## What users get in the meantime
 

@@ -1,4 +1,4 @@
-PackageIdentifier: GitHub.SamiAhmed7777.MAZA
+PackageIdentifier: MazaCoin.maza
 PackageVersion: 0.16.3
 Installers:
   - Architecture: x64

@@ -1,8 +1,8 @@
-PackageIdentifier: GitHub.SamiAhmed7777.MAZA
+PackageIdentifier: MazaCoin.maza
 PackageVersion: 0.16.3
 PackageLocale: en-US
-Publisher: SamiAhmed7777
-PublisherUrl: https://github.com/SamiAhmed7777
+Publisher: MazaCoin
+PublisherUrl: https://github.com/MazaCoin
 PublisherSupportUrl: https://github.com/MazaCoin/maza/issues
 Author: MazaCoin
 PackageName: MAZA Core
