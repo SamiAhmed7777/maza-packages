@@ -20,17 +20,14 @@ Five of those channels (AUR, Scoop, Chocolatey, Snap, Homebrew Cask) can ship to
 
 **The one thing that gates WinGet**: Microsoft requires a registered Partner Center publisher identity before any package can use the `MazaCoin.*` namespace. The registration is free and takes ~15 minutes — the steps are documented in [`winget/.deferred/README.md`](https://github.com/SamiAhmed7777/maza-packages/blob/main/winget/.deferred/README.md). Once `MazaCoin` is registered, the manifest under `winget/.deferred/manifests/m/MazaCoin/MAZA/0.16.3/` is ready to lift into the active tree and submit — same day.
 
-What I need from you (in order of preference):
+**If you want to ship this yourself, the easiest path is to fork [`SamiAhmed7777/maza-packages`](https://github.com/SamiAhmed7777/maza-packages) and push from your fork.** The manifests, asset files, and SHA256s are all in place. Submitting from your own fork is the cleanest signal to package-manager reviewers that the work is authorized, and you can take it from there without further coordination from me.
 
-1. **Best case:** You fork [`SamiAhmed7777/maza-packages`](https://github.com/SamiAhmed7777/maza-packages), push the manifests from there, and submit the PRs from your fork to each upstream package-manager repo (Homebrew tap, WinGet, Chocolatey, Snap). Most package managers prefer first-party submissions, and a fork from you is the cleanest signal that the work is authorized. I'll stop here once you've forked.
-2. **Good case:** You give me a written "yes, submit these under your name on my behalf" so I can file the PRs and handle moderation cycles. I'll credit you as the upstream source everywhere.
-3. **Minimal case:** You don't have time right now — I'll submit the AUR package (which has no permission gate), the Scoop manifest, and the Chocolatey package today. The other channels wait until you've had a chance to respond. No PRs to your identity.
+If you'd rather have me drive the PRs, two options:
+
+1. **Yes, submit on my behalf:** I file the PRs under your name (or my name, with you credited as upstream) and handle moderation cycles. Most channels (AUR, Scoop, Chocolatey, Snap, Homebrew Cask) can ship today.
+2. **No rush:** I'll leave the drafts in place and wait for your next release cycle if you'd rather bundle this with v0.16.4 or whatever's next. Just wanted to put the work in front of you so it's there when you're ready.
 
 Either way, the goal is the same: make MAZA easier to install for the community and anyone else who wants to use it.
-
-No rush — happy to wait for your next release cycle if you'd rather bundle this with v0.16.4 or whatever's next. Just wanted to put the work in front of you so it's there when you're ready.
-
-Feel free to fork the repo at your convenience and implement the changes however you prefer — the manifests, asset files, and SHA256s are all in place. Once you push to a package-manager repo, `brew install --cask maza`, `scoop install maza`, `choco install maza`, and the rest become real.
 
 With respect,
 Sami
