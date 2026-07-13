@@ -1,9 +1,3 @@
-# Message to send to @owlhooter
-
-Draft below. Adapt as needed — this is a starting point, not gospel.
-
----
-
 **To:** @owlhooter (DM on GitHub, or post as a GitHub Discussion on MazaCoin/maza)
 **Subject:** Package manager distribution for MAZA 0.16.3 — drafts ready, one 15-minute registration unlocks WinGet
 
@@ -38,12 +32,3 @@ No rush — happy to wait for your next release cycle if you'd rather bundle thi
 
 With respect,
 Sami
-
----
-
-## Notes for whoever sends this
-
-- Send it as a GitHub Discussion (not an issue) on MazaCoin/maza — Discussions are lower-pressure than Issues and don't show up in the "open issues" counter.
-- If @owlhooter prefers Discord/Telegram/email, those are listed on mazacoin.org — adjust the channel.
-- Don't send this and then immediately start submitting AUR PRs. Wait at least a week for a response. AUR submission is the one channel that doesn't need permission, so if they ghost, you can do it without — but give them the courtesy first.
-- If they say yes (option 1 or 2 above), the manifest files in this repo are ready to copy directly into the appropriate upstream PR.
