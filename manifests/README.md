@@ -8,7 +8,7 @@ This repo contains ready-to-submit manifests for:
 | ------------- | ------------------------------------------ | ------------------------------------ |
 | Homebrew Cask | `homebrew/Casks/maza.rb`                   | `Homebrew/homebrew-cask`             |
 | Scoop         | `scoop/maza.json`                          | `ScoopInstaller/Main`                |
-| WinGet        | `winget/manifests/g/GitHub.SamiAhmed7777/MAZA/0.16.3/` | `microsoft/winget-pkgs`              |
+| WinGet        | `winget/.deferred/manifests/g/GitHub.SamiAhmed7777/MAZA/0.16.3/` | `microsoft/winget-pkgs` (deferred — see [winget/.deferred/README.md](../winget/.deferred/README.md)) |
 | Chocolatey    | `chocolatey/{maza.nuspec,tools/*.ps1}`     | `chocolatey-community/chocolatey-packages` |
 | Snap          | `snap/snapcraft.yaml`                      | `snapcraft.io` (brand store)         |
 | AUR           | `aur/PKGBUILD`, `aur/maza.install`         | `aur.archlinux.org` (maza)           |
@@ -34,10 +34,10 @@ modifications, no fork of MAZA itself.
 
 1. **AUR** — no permission gate. Submit immediately.
 2. **Scoop** — open community, low bar.
-3. **WinGet** — Microsoft bot auto-validates in seconds; review by humans within days.
-4. **Chocolatey** — needs API key + 1-3 day mod queue.
-5. **Snap** — needs brand-registered snap name; multi-day review.
-6. **Homebrew Cask** — strictest about upstream acknowledgment; do this last, after the maintainer has been told.
+3. **Chocolatey** — needs API key + 1-3 day mod queue.
+4. **Snap** — needs brand-registered snap name; multi-day review.
+5. **Homebrew Cask** — strictest about upstream acknowledgment; do this last, after the maintainer has been told.
+6. **WinGet** — **deferred**. Manifest is drafted at `winget/.deferred/manifests/...`, but will only be submitted once MazaCoin (or its maintainer `@owlhooter`) registers as a Microsoft Partner Center publisher. See `winget/.deferred/README.md` for activation criteria.
 
 See [`../MAINTAINER-OUTREACH.md`](../MAINTAINER-OUTREACH.md) for the message to send to @owlhooter.
 
